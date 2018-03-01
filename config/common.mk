@@ -63,6 +63,23 @@ PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/lineage/prebuilt/common/bin/sysinit:system/bin/sysinit
 
+# ViPER4Android
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/viper.zip:system/addon.d/viper.zip
+
+# Copy Magisk zip
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
+
+#LMT
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/app/LMT_v2.9.apk:system/priv-app/LMT/LMT_v2.9.apk \
+ 	vendor/lineage/prebuilt/common/app/libTouchServiceNative.so:system/lib64/libTouchServiceNative.so
+
+#ADAWAY
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/app/AdAway.apk:system/priv-app/AdAway/AdAway.apk
+
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # userinit support
 PRODUCT_COPY_FILES += \
