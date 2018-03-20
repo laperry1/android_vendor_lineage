@@ -147,7 +147,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageSettingsProvider \
     LineageSetupWizard \
-    Eleven \
     ExactCalculator \
     Jelly \
     LockClock \
