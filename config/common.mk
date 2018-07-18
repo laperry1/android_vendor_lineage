@@ -78,6 +78,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
 
+# Copy Magisk zip
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
+
+#LMT
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/app/LMT_v2.9.apk:system/priv-app/LMT/LMT_v2.9.apk \
+ 	vendor/lineage/prebuilt/common/app/libTouchServiceNative.so:system/lib64/libTouchServiceNative.so
+
 # This is Lineage!
 PRODUCT_COPY_FILES += \
     vendor/lineage/config/permissions/org.lineageos.android.xml:system/etc/permissions/org.lineageos.android.xml \
@@ -117,7 +126,6 @@ PRODUCT_PACKAGES += \
 
 # Custom Lineage packages
 PRODUCT_PACKAGES += \
-    AudioFX \
     LineageSettingsProvider \
     ExactCalculator \
     Jelly \
